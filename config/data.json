@@ -1,0 +1,166 @@
+{
+    "workflow_id": "1",
+    "title": "supply chain",
+    "description": "supply chain for Taka",
+    "supplyChain": [
+        {
+            "data": {
+                "name": "Wafer Fab",
+                "supplier_name": "TSMC/GUC",
+                "geographic_location": "Taiwan",
+                "fab": "fab1"
+            },
+            "shape": {
+                "name": "supplier",
+                "type": "square",
+                "color": "green"
+            },
+            "to": [
+                {
+                    "shape": {
+                        "name": "",
+                        "type": "arrow",
+                        "color": "black"
+                    }
+                },
+                {
+                    "shape": {
+                        "name": "1",
+                        "type": "triangle",
+                        "color": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "name": "Wafer Bump",
+                "supplier_name": "Amkor",
+                "geographic_location": "Taiwan",
+                "fab": "T1"
+            },
+            "shape": {
+                "name": "supplier",
+                "type": "square",
+                "color": "green"
+            },
+            "to": [
+                {
+                    "shape": {
+                        "name": "",
+                        "type": "arrow",
+                        "color": "black"
+                    }
+                },
+                {
+                    "shape": {
+                        "name": "2",
+                        "type": "triangle",
+                        "color": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "name": "Wafer Test",
+                "supplier_name": "Amkor",
+                "geographic_location": "Taiwan",
+                "fab": "T3"
+            },
+            "shape": {
+                "name": "supplier",
+                "type": "square",
+                "color": "green"
+            },
+            "to": [
+                {
+                    "shape": {
+                        "name": "",
+                        "type": "arrow",
+                        "color": "black"
+                    }
+                },
+                {
+                    "shape": {
+                        "name": "3",
+                        "type": "triangle",
+                        "color": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "name": "Package Assembly",
+                "supplier_name": "Amkor",
+                "geographic_location": "Korea",
+                "fab": "K4"
+            },
+            "shape": {
+                "name": "supplier",
+                "type": "square",
+                "color": "green"
+            },
+            "to": [
+                {
+                    "shape": {
+                        "name": "",
+                        "type": "arrow",
+                        "color": "black"
+                    }
+                },
+                {
+                    "shape": {
+                        "name": "4",
+                        "type": "triangle",
+                        "color": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "name": "Package Test",
+                "supplier_name": "Amkor",
+                "geographic_location": "Korea",
+                "fab": "K3"
+            },
+            "shape": {
+                "name": "supplier",
+                "type": "square",
+                "color": "green"
+            },
+            "to": [
+                {
+                    "shape": {
+                        "name": "",
+                        "type": "arrow",
+                        "color": "black"
+                    }
+                },
+                {
+                    "shape": {
+                        "name": "5",
+                        "type": "triangle",
+                        "color": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "name": "CM",
+                "supplier_name": "TBD",
+                "geographic_location": "TBD",
+                "fab": "TBD"
+            },
+            "shape": {
+                "name": "contract manufacturer",
+                "type": "square",
+                "color": "orange"
+            },
+            "to": []
+        }
+    ]
+}

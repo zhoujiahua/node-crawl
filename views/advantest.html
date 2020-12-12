@@ -1,0 +1,38 @@
+{{ extend './layout.html' }}
+{{block "style"}}
+<style>
+    .content {
+        margin-top: 200px;
+        height: 350px;
+    }
+</style>
+{{/block}}
+
+{{block "wrapper"}}
+<div class="container">
+    <div class="content">
+        <h1>Welcome to crawl page</h1>
+        <h2>Please wait while the data is loaded...</h2>
+    </div>
+</div>
+{{/block}}
+
+{{block "script"}}
+<script>
+    var url = 'https://www.advantest.com';
+    $.ajax({
+        type: "GET",
+        url: "/api/crawl",
+        data: {
+            url: url
+        },
+        dataType: "json",
+        success: function (res) {
+            var data = res.data;
+            var reg = /<link.+?href=\"(.+?)\".*>/;
+            console.log(data.match(reg))
+            document.write(data);
+        }
+    });
+</script>
+{{/block}}
